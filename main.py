@@ -216,7 +216,7 @@ if __name__ == "__main__":
                 
                 for t in transactions:
                     print()
-                    print(f"Revisando {t} de estado {transactions[t]["status"]}")
+                    print(f"Revisando {t} de estado {transactions[t]['status']}")
                     if transactions[t]["status"] in ["ABIERTA", "EN_PREPARACION"]:
                         print(f"{t} en estado válido")
                         if var_name in transactions[t]["writes"]:
@@ -261,7 +261,7 @@ if __name__ == "__main__":
     
     for t in transactions:
         if transactions[t]["status"] not in statuses:
-            print(f"ERROR: {t} {transactions[t]["status"]}")
+            print(f"ERROR: {t} {transactions[t]['status']}")
     
     output_file.close()
             
